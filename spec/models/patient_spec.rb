@@ -12,10 +12,10 @@
 
 require 'spec_helper'
 
-describe User do
+describe Patient do
 
   before do
-    @patient = Patient.new(first_name: "First", last_name: "Last" email: "user@example.com", 
+    @patient = Patient.new(first_name: "Example", last_name: "Example" email: "patient@example.com", 
                      password: "foobar", password_confirmation: "foobar")
   end
 
@@ -68,9 +68,9 @@ describe User do
   
   describe "when email address is already taken" do
     before do
-      user_with_same_email = @patient.dup
-      user_with_same_email.email = @patient.email.upcase
-      user_with_same_email.save
+      patient_with_same_email = @patient.dup
+      patient_with_same_email.email = @patient.email.upcase
+      patient_with_same_email.save
     end
 
     it { should_not be_valid }

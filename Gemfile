@@ -6,6 +6,7 @@ gem "jquery-rails", "2.2.0"
 gem "jquery-ui-rails", "4.0.0"
 gem "pg", "0.12.2"
 gem 'bcrypt-ruby', '3.0.1'
+gem 'tabs_on_rails'
 
 
 group :development, :test do

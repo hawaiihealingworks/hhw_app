@@ -4,24 +4,47 @@
 @import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
 @import url(http://fonts.googleapis.com/css?family=Karla);
 
+
+$grey: #818286;
+$lightGrey: #AFB0B3;
+
 /* Nav Bar*/
+
+
+ul.right-nav {
+	
+	float: right;
+	list-style-type: none;
+	font-family: "Karla";
+	font-size: 1.1em;
+	
+	a {
+		color: $grey;
+	}
+	li.divider-vertical {
+		margin-top: 2px;
+  		height: 30px;
+  		background-color: #ffffff;
+  		border-right: 1px solid $lightGrey;
+	}
+}
 
 .navi-inner {
 	background: white;
-	height: 110px;
+	height: 90px;
 	border-bottom: 4px solid white;
 	.navi {
 		position: relative;
 		margin-top: 55px;
 	}
 
-	.logo {
+	.logo-div {
 		margin-top: -55px;
 	}
 	
 	#logo {
 		float: left;
-		margin-top: 15px;
+		margin-top: 11px;
 	}
 
 	#nav-contact {
@@ -33,7 +56,7 @@
 		font-size: 1.5em;
 		text-align: center;
 		a {
-			color: #818286;
+			color: $grey;
 			letter-spacing: .05em;
 		}
 	}
@@ -52,15 +75,10 @@
 }	
 
 
-.testing {
-	position: absolute;
-	left: 50%;
-	margin-left: -470px;
 
-}
 
 /* Display an object */
 .show{
-	background: #ffffff;
+	background: #000000;
  
 }

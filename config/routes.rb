@@ -6,7 +6,7 @@ resources :patients
   match "/therapy",   to: "static_pages#therapy"
   match "/rate",      to: "static_pages#rates"
   match "/contact",   to: "static_pages#contact"
-  match "/patients",  to: "patients#welcome"
+  match "/patients",  to: "patients#show"
 
 
   # The priority is based upon order of creation:
