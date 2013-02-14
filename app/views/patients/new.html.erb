@@ -1,0 +1,26 @@
+<% provide(:title, 'New Patient') %>
+
+<div class="row span6 offset3">
+  <h1>New Patient Account</h1>
+  <div>
+    <%= form_for(@patient) do |f| %>
+
+      <%= f.label :first_name, "First Name" %>
+      <%= f.text_field :first_name %>
+
+      <%= f.label :last_name, "Last Name" %>
+      <%= f.text_field :last_name %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, "Password Confirm" %>
+      <%= f.password_field :password_confirmation %>
+
+      <br><%= f.submit "Add New Patient", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>

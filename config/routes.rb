@@ -3,10 +3,11 @@ resources :patients
 
   root to: "static_pages#home"
 
-  match "/therapy",   to: "static_pages#therapy"
-  match "/rate",      to: "static_pages#rates"
-  match "/contact",   to: "static_pages#contact"
-  match "/patients",  to: "patients#show"
+  match "/therapy",     to: "static_pages#therapy"
+  match "/rate",        to: "static_pages#rates"
+  match "/contact",     to: "static_pages#contact"
+  match "/patients",    to: "patients#show"
+  match "/add_patient", to: "patients#new" 
 
 
   # The priority is based upon order of creation:
