@@ -1,0 +1,66 @@
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Abel);
+@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic);
+@import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
+@import url(http://fonts.googleapis.com/css?family=Karla);
+
+/* Nav Bar*/
+
+.navi-inner {
+	background: white;
+	height: 110px;
+	border-bottom: 4px solid white;
+	.navi {
+		position: relative;
+		margin-top: 55px;
+	}
+
+	.logo {
+		margin-top: -55px;
+	}
+	
+	#logo {
+		float: left;
+		margin-top: 15px;
+	}
+
+	#nav-contact {
+		float: right;
+	}
+	
+	.nav-link {
+		font-family: "Karla";
+		font-size: 1.5em;
+		text-align: center;
+		a {
+			color: #818286;
+			letter-spacing: .05em;
+		}
+	}
+
+	#logo-div{
+		position: relative;
+		margin-top: -30px;
+		margin-left: 20px;
+	}
+
+	#contact-div{
+		position: relative;
+		margin-top: -30px;
+		margin-left: 20px;
+	}
+}	
+
+
+.testing {
+	position: absolute;
+	left: 50%;
+	margin-left: -470px;
+
+}
+
+/* Display an object */
+.show{
+	background: #ffffff;
+ 
+}

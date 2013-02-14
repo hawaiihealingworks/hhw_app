@@ -1,0 +1,21 @@
+<header class="container navi-inner">
+	<div class="container">
+		<div class="row navi">
+			<div class="row span4 logo"> <%= link_to image_tag("logo_header.jpg", alt: "Hawaii Healing Works", id: "logo"), root_path %>
+			</div>
+			<div class="span8">
+				<div class="row">
+					<div class="span1 show"><%= image_tag("div.png", id: "logo-div") %>
+					</div>
+					<div class="span2 nav-link show"><%= link_to "Services", therapy_path %>
+					</div>
+					<div class="span2 nav-link show"><%= link_to "Conditions", contact_path %>
+					</div>
+					<div class="span1 show"><%= image_tag("div.png", id: "contact-div") %>
+					</div>
+					<div class="span2 nav-link show"><%= link_to "Patient Login", patients_path %>
+					</div>
+				</div>
+			</div>
+		</div>
+</header>
